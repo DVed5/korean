@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Korean Tour</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<button class="header__menu-btn">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="18" viewBox="0 0 30 18" fill="none">
+						<path d="M0 0H30V2H0V0Z" fill="#392177"></path>
+						<path d="M0 8H30V10H0V8Z" fill="#392177"></path>
+						<rect y="16" width="30" height="2" fill="#392177"></rect>
+					</svg>
+				</button>
+				<a class="header__logo" href="#">
+					<img class="logo__img" src="images/logo.svg" alt="logo">
+				</a>
+				<nav class="header__menu">
+					<ul class="header__menu-list">
+						<li class="header__menu-item"><a href="#services">Услуги</a></li>
+						<li class="header__menu-item"><a href="#tours">Расписание туров</a></li>
+						<li class="header__menu-item"><a href="#faq">FAQ</a></li>
+						<li class="header__menu-item"><a href="#reviews">Отзывы</a></li>
+						<li class="header__menu-item"><a href="#contacts">Контакты и оплата</a></li>
+					</ul>
+				</nav>
+				<button class="header__consultation open-modal">
+					<img src="images/header-form.svg" alt="Получить консультацию">
+				</button>
+				<dialog class="dialog">
+					<div class="dialog__inner">
+						<button class="close-modal" type="button">×</button>
+						<div class="form-title">Есть вопрос?
+							<div class="form-subtitle">Напишите нам ниже, и мы свяжемся с вами</div>
+						</div>
+						<form>
+							<div class="form-group">
+								<input type="text" placeholder="Ваше имя" required>
+							</div>
+							<div class="form-group">
+								<input type="tel" placeholder="+7 (999) 999-99-99" required>
+							</div>
+							<div class="form-group">
+								<input type="email" placeholder="Ваш e-mail" required>
+							</div>
+							<div class="form-group">
+								<textarea id="message" rows="4" placeholder="Введите ваше сообщение"></textarea>
+							</div>
+							<button type="submit" class="submit-btn">Отправить</button>
+						</form>
+					</div>
+				</dialog>
+				<button id="scrollToTop" class="scroll-to-top">&#8593;</button>
+			</div>
+		</div>
+	</header>
+
+	<main>
+
+		<section class="top">
+			<div class="container">
+				<div class="top__inner">
+					<div class="top__info">
+						<h1 class="top__info-title">
+							ВАШ ПРОВОДНИК <br> В <span>ЮЖНОЙ КОРЕЕ</span>
+						</h1>
+						<p class="top__info-text text">
+							Мы предлагаем широкий выбор туров и услуг. Наслаждайтесь отдыхом, а мы возьмем на себя все организационные
+							вопросы.
+						</p>
+						<ul class="social-links">
+							<li><a class="social-link" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Посетить профиль в Linkedin">
+									<img src="images/linkedin.svg" alt="">
+								</a></li>
+							<li><a class="social-link" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Посетить профиль в Pinterest">
+									<img src="images/pinterest.svg" alt="">
+								</a></li>
+							<li><a class="social-link" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Посетить профиль в Twitter">
+									<img src="images/twitter.svg" alt="">
+								</a></li>
+						</ul>
+					</div>
+					<div class="top__image">
+						<picture class="top__image-picture">
+							<!-- Версия для мобильных -->
+							<source srcset="images/top-mobile.avif" type="image/avif" media="(max-width: 645px)">
+							<source srcset="images/top-mobile.webp" type="image/webp" media="(max-width: 645px)">
+							<source srcset="images/top-mobile.png" media="(max-width: 645px)">
+							<!-- Версия для десктопа -->
+							<source srcset="images/top.avif" type="image/avif">
+							<source srcset="images/top.webp" type="image/webp">
+							<img src="images/top.png" alt="Главное изображение">
+						</picture>
+						<a class="top__image-btn" href="#tours">
+							<span>Выбрать тур</span>
+							<img src="images/arrow-diagonal.svg">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="about" id="about">
+			<div class="container">
+				<div class="about__inner">
+					<a class="about-license">
+						<img class="about-license__icon" src="images/medal.svg" alt="">
+						<span class="about-license__text">
+							Мы работаем по Лицензии, <br> выданной государством
+						</span>
+					</a>
+					<div class="about-partners" id="partners">
+						<h4 class="about-partners__title">
+							Наши партнеры
+						</h4>
+						<div class="about-partners__items">
+							<a class="about-partners__item" href="#">
+								<img src="images/partners-hilton.png" alt="Перейти на сайт партнера Hilton">
+							</a>
+							<a class="about-partners__item" href="#">
+								<img src="images/partners-air.png" alt="Перейти на сайт партнера Korean air">
+							</a>
+						</div>
+					</div>
+					<div class="about-info">
+						<h2 class="about-info__title title">
+							Расскажем больше<br><span>о нашей компании</span>
+						</h2>
+						<div class="about-info__text text">
+							<p> В Korean Tour мы предоставляем туры в Южную корею и оказываем спектр дополнительных услуг.</p>
+							<p>Мы работаем с 2001 года и провели 1096 туров. Наши туры уникальны, мы сами разрабатываем и проводим
+								программы.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="services" id="services">
+			<div class="container">
+				<div class="services__inner">
+					<div class="services__top">
+						<h2 class="services__top-title title">
+							<span>Наши</span> услуги
+						</h2>
+						<p class="services__top-text title-text">
+							Если у вас возникли вопросы по нашим услугам, <br> вы всегда можете связаться с нами
+						</p>
+						<ul class="social-links">
+							<li><a class="social-link" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Посетить профиль в Linkedin">
+									<img src="images/linkedin.svg" alt="">
+								</a></li>
+							<li><a class="social-link" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Посетить профиль в Pinterest">
+									<img src="images/pinterest.svg" alt="">
+								</a></li>
+							<li><a class="social-link" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Посетить профиль в Twitter">
+									<img src="images/twitter.svg" alt="">
+								</a></li>
+						</ul>
+					</div>
+					<div class="services__wrapper">
+						<a class="services__item" href="#">
+							<h3 class="services__item-title">
+								<img class="services__item-icon" src="images/star.svg" alt="">
+								Фирменные туры
+							</h3>
+							<p class="services__item-text">
+								Те самые туры с Машей и Анютой
+							</p>
+							<img class="services__item-arrow" src="images/arrow-right.svg" alt="">
+						</a>
+						<a class="services__item" href="#">
+							<h3 class="services__item-title">
+								<img class="services__item-icon" src="images/star.svg" alt="">
+								Групповые туры
+							</h3>
+							<p class="services__item-text">
+								Пакетный тур с полным сопровождением
+							</p>
+							<img class="services__item-arrow" src="images/arrow-right.svg" alt="">
+						</a>
+						<a class="services__item" href="#">
+							<h3 class="services__item-title">
+								<img class="services__item-icon" src="images/star.svg" alt="">
+								Визы / кета
+							</h3>
+							<p class="services__item-text">
+								Оформление документов для туристической поездки в Корею для граждан всех стран от юриста Korean Tour
+							</p>
+							<img class="services__item-arrow" src="images/arrow-right.svg" alt="">
+						</a>
+						<a class="services__item" href="#">
+							<h3 class="services__item-title">
+								<img class="services__item-icon" src="images/star.svg" alt="">
+								Туры выходного дня
+							</h3>
+							<p class="services__item-text">
+								Короткие туры в знаковые места: Пусан, Чеджу, Горнолыжный тур и т.д.
+							</p>
+							<img class="services__item-arrow" src="images/arrow-right.svg" alt="">
+						</a>
+						<a class="services__item" href="#">
+							<h3 class="services__item-title">
+								<img class="services__item-icon" src="images/star.svg" alt="">
+								Индивидуальные туры
+							</h3>
+							<p class="services__item-text">
+								Составление пакетного тура с программой по вашим пожеланиям
+							</p>
+							<img class="services__item-arrow" src="images/arrow-right.svg" alt="">
+						</a>
+						<a class="services__item" href="#">
+							<h3 class="services__item-title">
+								<img class="services__item-icon" src="images/star.svg" alt="">
+								Экскурсии
+							</h3>
+							<p class="services__item-text">
+								Программа на 1 день: бьюти-тур, BTS-тур, гастро-тур, шоппинг-тур и т.д.
+							</p>
+							<img class="services__item-arrow" src="images/arrow-right.svg" alt="">
+						</a>
+						<a class="services__item" href="#">
+							<h3 class="services__item-title">
+								<img class="services__item-icon" src="images/star.svg" alt="">
+								Медицинский туризм
+							</h3>
+							<p class="services__item-text">
+								Чекап здоровья, корейские процедуры, пластическая хирургия
+							</p>
+							<img class="services__item-arrow" src="images/arrow-right.svg" alt="">
+						</a>
+						<ul class="services__item">
+							<h3 class="services__item-title">
+								<img class="services__item-icon" src="images/star.svg" alt="">
+								Дополнительные услуги
+							</h3>
+							<li><a href="#">Трансфер</a></li>
+							<li><a href="#">Подбор и бронирование отеля</a></li>
+							<li><a href="#">Билеты на концерты/фестивали</a></li>
+							<li><a href="#">Составление маршрута без сопровождения и бронирований</a></li>
+							<li><a href="#">Личное сопровождение гида по свободной программе</a></li>
+							<li><a href="#">Корпоративные туры</a></li>
+							<a href="#">
+								<img class="services__item-arrow" src="images/arrow-right.svg" alt="">
+							</a>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="tours" id="tours">
+			<div class="container">
+				<div class="tours__inner">
+					<div class="tours-top">
+						<h2 class="tours-top__title title">Расписание<br><span>групповых туров</span></h2>
+						<p class="tours-top__text title-text">Приглашаем вас в удивительное путешествие, полное новых <br>
+							впечатлений, знакомств с близкими по духу людьми!</p>
+					</div>
+					<div class="tours-wrapper">
+						<div class="tours-item">
+							<div class="tours-item__img">
+								<img src="images/tours-cherryblossom.jpg" alt="Обложка тура, изображающая цветение вишни">
+								<span class="tours-item__badge-special">Фирменный тур</span>
+								<span class="tours-item__availability">Осталось 9 мест</span>
+							</div>
+							<div class="tours-item__info">
+								<div class="tours-item__info-left">
+									<h3>Цветение вишни</h3>
+									<p class="tours-item__date">8 апреля - 14 апреля 2025</p>
+									<p class="tours-item__location">Сеул, Южная корея</p>
+									<p class="tours-item__definition">Корейская культура, провинция Кёнгидо, деревня Букчон, остров Нами,
+										парк аттракционов Lotte World</p>
+								</div>
+								<div class="tours-item__info-right">
+									<div class="tours-item__badge">Полное сопровождение</div>
+									<div class="tours-item__price">$2700</div>
+									<div class="tours-item__duration">11 дней / 10 ночей</div>
+									<a class="tours-item__btn" href="#"><span>Подробнее</span>
+										<img src="images/arrow-diagonal.svg" alt="Перейти к подробному описанию тура">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="tours-item">
+							<div class="tours-item__img">
+								<img src="images/tours-withidol.jpg"
+									alt="Обложка тура, изображающая девушку в традиционном корейском костюме">
+								<span class="tours-item__availability">Осталось 16 мест</span>
+							</div>
+							<div class="tours-item__info">
+								<div class="tours-item__info-left">
+									<h3>Тур со звездой</h3>
+									<p class="tours-item__date">01 мая - 08 мая 2025</p>
+									<p class="tours-item__location">Сеул, Южная корея</p>
+									<p class="tours-item__definition">Эксклюзивный тур по Южной Корее с возможностью встретиться со
+										звездой
+									</p>
+								</div>
+								<div class="tours-item__info-right">
+									<div class="tours-item__badge">Полное сопровождение</div>
+									<div class="tours-item__price">$1500</div>
+									<div class="tours-item__duration">7 дней / 6 ночей</div>
+									<a class="tours-item__btn" href="#"><span>Подробнее</span>
+										<img src="images/arrow-diagonal.svg" alt="Перейти к подробному описанию тура">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="tours-item">
+							<div class="tours-item__img">
+								<img src="images/tours-beauty.jpg" alt="Обложка тура, корейскую косметику">
+								<span class="tours-item__availability">Осталось 7 мест</span>
+							</div>
+							<div class="tours-item__info">
+								<div class="tours-item__info-left">
+									<h3>Бьюти-тур</h3>
+									<p class="tours-item__date">10 мая - 17 мая 2025</p>
+									<p class="tours-item__location">Сеул, Южная корея</p>
+									<p class="tours-item__definition">Погружение в мир корейской косметики и уходовых процедур
+									</p>
+								</div>
+								<div class="tours-item__info-right">
+									<div class="tours-item__badge">Полное сопровождение</div>
+									<div class="tours-item__price">$1200</div>
+									<div class="tours-item__duration">6 дней / 5 ночей</div>
+									<a class="tours-item__btn" href="#"><span>Подробнее</span>
+										<img src="images/arrow-diagonal.svg" alt="Перейти к подробному описанию тура">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="tours-item">
+							<div class="tours-item__img">
+								<img src="images/tours-kpop.jpg"
+									alt="Обложка тура, изображающая девушек, которые гуляют по улицам Сеула">
+								<span class="tours-item__availability">Осталось 12 мест</span>
+							</div>
+							<div class="tours-item__info">
+								<div class="tours-item__info-left">
+									<h3>K-pop тур</h3>
+									<p class="tours-item__date">01 июня - 08 июня 2025</p>
+									<p class="tours-item__location">Сеул, Южная корея</p>
+									<p class="tours-item__definition">Уникальная возможность побывать на концерте и шоу K-pop
+									</p>
+								</div>
+								<div class="tours-item__info-right">
+									<div class="tours-item__badge">Полное сопровождение</div>
+									<div class="tours-item__price">$1300</div>
+									<div class="tours-item__duration">6 дней / 5 ночей</div>
+									<a class="tours-item__btn" href="#"><span>Подробнее</span>
+										<img src="images/arrow-diagonal.svg" alt="Перейти к подробному описанию тура">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="tours-item">
+							<div class="tours-item__img">
+								<img src="images/tours-bts.jpg" alt="Обложка тура, изображающая место съемок BTS IN THE SOOP">
+								<span class="tours-item__availability">Осталось 6 мест</span>
+							</div>
+							<div class="tours-item__info">
+								<div class="tours-item__info-left">
+									<h3>BTS Festa</h3>
+									<p class="tours-item__date">10 июня - 17 июня 2025</p>
+									<p class="tours-item__location">Сеул, Южная корея</p>
+									<p class="tours-item__definition">Тур для поклонников BTS с экскурсией по местам, связанным с группой
+									</p>
+								</div>
+								<div class="tours-item__info-right">
+									<div class="tours-item__badge">Полное сопровождение</div>
+									<div class="tours-item__price">$1600</div>
+									<div class="tours-item__duration">7 дней / 6 ночей</div>
+									<a class="tours-item__btn" href="#"><span>Подробнее</span>
+										<img src="images/arrow-diagonal.svg" alt="Перейти к подробному описанию тура">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="tours-item">
+							<div class="tours-item__img">
+								<img src="images/tours-luxury.jpg" alt="Обложка тура, изображающая элитные районы Кореи">
+								<span class="tours-item__availability">Осталось 15 мест</span>
+							</div>
+							<div class="tours-item__info">
+								<div class="tours-item__info-left">
+									<h3>Luxury тур</h3>
+									<p class="tours-item__date">13 сентября - 20 сентября 2025</p>
+									<p class="tours-item__location">Сеул, Южная корея</p>
+									<p class="tours-item__definition">Роскошное путешествие по Южной Корее с высоким уровнем комфорта
+									</p>
+								</div>
+								<div class="tours-item__info-right">
+									<div class="tours-item__badge">Полное сопровождение</div>
+									<div class="tours-item__price">$2500</div>
+									<div class="tours-item__duration">8 дней / 7 ночей</div>
+									<a class="tours-item__btn" href="#"><span>Подробнее</span>
+										<img src="images/arrow-diagonal.svg" alt="Перейти к подробному описанию тура">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="tours-item">
+							<div class="tours-item__img">
+								<img src="images/tours-autumn.jpg" alt="Обложка тура, изображающая осенний парк">
+								<span class="tours-item__availability">Осталось 26 мест</span>
+							</div>
+							<div class="tours-item__info">
+								<div class="tours-item__info-left">
+									<h3>Осенняя Корея</h3>
+									<p class="tours-item__date">10 октября - 17 октября 2025</p>
+									<p class="tours-item__location">Сеул, Южная корея</p>
+									<p class="tours-item__definition">Путешествие, чтобы насладиться красотой осенней Кореи
+									</p>
+								</div>
+								<div class="tours-item__info-right">
+									<div class="tours-item__badge">Полное сопровождение</div>
+									<div class="tours-item__price">$1300</div>
+									<div class="tours-item__duration">6 дней / 5 ночей</div>
+									<a class="tours-item__btn" href="#"><span>Подробнее</span>
+										<img src="images/arrow-diagonal.svg" alt="Перейти к подробному описанию тура">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="tours-item">
+							<div class="tours-item__img">
+								<img src="images/tours-winter.jpg" alt="Обложка тура, изображающая новогодние салюты">
+								<span class="tours-item__availability">Осталось 18 мест</span>
+							</div>
+							<div class="tours-item__info">
+								<div class="tours-item__info-left">
+									<h3>Новогодний тур</h3>
+									<p class="tours-item__date">27 декабря - 03 января 2026</p>
+									<p class="tours-item__location">Сеул, Южная корея</p>
+									<p class="tours-item__definition">Праздничное путешествие по Корее с новогодними мероприятиями и
+										традициями
+									</p>
+								</div>
+								<div class="tours-item__info-right">
+									<div class="tours-item__badge">Полное сопровождение</div>
+									<div class="tours-item__price">$1400</div>
+									<div class="tours-item__duration">7 дней / 6 ночей</div>
+									<a class="tours-item__btn" href="#"><span>Подробнее</span>
+										<img src="images/arrow-diagonal.svg" alt="Перейти к подробному описанию тура">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq" id="faq">
+			<div class="container">
+				<div class="faq__inner">
+					<div class="faq__top">
+						<h2 class="faq__top-title title">
+							<span>Отвечаем</span> <br>на частые вопросы
+						</h2>
+						<p class="faq__top-text title-text">
+							Если у вас остались вопросы, на которые вы не нашли ответ, просто напишите нам, и мы поможем
+						</p>
+						<ul class="social-links">
+							<li><a class="social-link" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Посетить профиль в Linkedin">
+									<img src="images/linkedin.svg" alt="">
+								</a></li>
+							<li><a class="social-link" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Посетить профиль в Pinterest">
+									<img src="images/pinterest.svg" alt="">
+								</a></li>
+							<li><a class="social-link" href="#" target="_blank" rel="noopener noreferrer"
+									aria-label="Посетить профиль в Twitter">
+									<img src="images/twitter.svg" alt="">
+								</a></li>
+						</ul>
+					</div>
+					<div class="faq__wrapper">
+						<div class="faq__item">
+							<div class="faq__question">
+								<button class="faq__button">
+									<span>Что входит в стоимость тура?</span>
+									<svg class="services__item-toggle" width="100" height="100" viewBox="0 0 100 100"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="100" height="100" fill="#392177" rx="17" ry="17" />
+										<rect class="plus-vertical" x="45" y="30" width="10" height="40" fill="#f4f4f4" />
+										<rect class="plus-horizontal" x="30" y="45" width="40" height="10" fill="#f4f4f4" />
+									</svg>
+								</button>
+							</div>
+							<div class="faq__answer">
+								<p>В стоимость тура входят все трансферы, экскурсии, проживание, питание (по программе) и услуги гида
+								</p>
+							</div>
+						</div>
+						<div class="faq__item">
+							<div class="faq__question">
+								<button class="faq__button">
+									<span>Что не входит в стоимость тура?</span>
+									<svg class="services__item-toggle" width="100" height="100" viewBox="0 0 100 100"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="100" height="100" fill="#392177" rx="17" ry="17" />
+										<rect class="plus-vertical" x="45" y="30" width="10" height="40" fill="#f4f4f4" />
+										<rect class="plus-horizontal" x="30" y="45" width="40" height="10" fill="#f4f4f4" />
+									</svg>
+								</button>
+							</div>
+							<div class="faq__answer">
+								<p>В стоимость не включены личные расходы, билеты на дополнительные мероприятия и медицинская страховка
+								</p>
+							</div>
+						</div>
+						<div class="faq__item">
+							<div class="faq__question">
+								<button class="faq__button">
+									<span>Как забронировать тур?</span>
+									<svg class="services__item-toggle" width="100" height="100" viewBox="0 0 100 100"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="100" height="100" fill="#392177" rx="17" ry="17" />
+										<rect class="plus-vertical" x="45" y="30" width="10" height="40" fill="#f4f4f4" />
+										<rect class="plus-horizontal" x="30" y="45" width="40" height="10" fill="#f4f4f4" />
+									</svg>
+								</button>
+							</div>
+							<div class="faq__answer">
+								<p>Для бронирования тура заполните форму на нашем сайте или свяжитесь с нами по телефону</p>
+							</div>
+						</div>
+						<div class="faq__item">
+							<div class="faq__question">
+								<button class="faq__button">
+									<span>Как оплатить тур?</span>
+									<svg class="services__item-toggle" width="100" height="100" viewBox="0 0 100 100"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="100" height="100" fill="#392177" rx="17" ry="17" />
+										<rect class="plus-vertical" x="45" y="30" width="10" height="40" fill="#f4f4f4" />
+										<rect class="plus-horizontal" x="30" y="45" width="40" height="10" fill="#f4f4f4" />
+									</svg>
+								</button>
+							</div>
+							<div class="faq__answer">
+								<p>Оплатить тур можно банковским переводом, картой или через онлайн-платежную систему</p>
+							</div>
+						</div>
+						<div class="faq__item">
+							<div class="faq__question">
+								<button class="faq__button">
+									<span>Какая стоимость тура в рублях?</span>
+									<svg class="services__item-toggle" width="100" height="100" viewBox="0 0 100 100"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="100" height="100" fill="#392177" rx="17" ry="17" />
+										<rect class="plus-vertical" x="45" y="30" width="10" height="40" fill="#f4f4f4" />
+										<rect class="plus-horizontal" x="30" y="45" width="40" height="10" fill="#f4f4f4" />
+									</svg>
+								</button>
+							</div>
+							<div class="faq__answer">
+								<p>Стоимость тура зависит от текущего курса валют и варьируется в зависимости от турпакета</p>
+							</div>
+						</div>
+						<div class="faq__item">
+							<div class="faq__question">
+								<button class="faq__button">
+									<span>Как узнать подробную программу тура?</span>
+									<svg class="services__item-toggle" width="100" height="100" viewBox="0 0 100 100"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="100" height="100" fill="#392177" rx="17" ry="17" />
+										<rect class="plus-vertical" x="45" y="30" width="10" height="40" fill="#f4f4f4" />
+										<rect class="plus-horizontal" x="30" y="45" width="40" height="10" fill="#f4f4f4" />
+									</svg>
+								</button>
+							</div>
+							<div class="faq__answer">
+								<p>Подробную программу можно получить на сайте или связавшись с нами по телефону/почте</p>
+							</div>
+						</div>
+						<div class="faq__item">
+							<div class="faq__question">
+								<button class="faq__button">
+									<span>Как успеть забронировать место в туре?</span>
+									<svg class="services__item-toggle" width="100" height="100" viewBox="0 0 100 100"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="100" height="100" fill="#392177" rx="17" ry="17" />
+										<rect class="plus-vertical" x="45" y="30" width="10" height="40" fill="#f4f4f4" />
+										<rect class="plus-horizontal" x="30" y="45" width="40" height="10" fill="#f4f4f4" />
+									</svg>
+								</button>
+							</div>
+							<div class="faq__answer">
+								<p>Рекомендуем бронировать тур заранее, чтобы гарантировать место, так как количество мест ограничено
+								</p>
+							</div>
+						</div>
+						<div class="faq__item">
+							<div class="faq__question">
+								<button class="faq__button">
+									<span>Зачем вступать в закрытый чат в Телеграм?</span>
+									<svg class="services__item-toggle" width="100" height="100" viewBox="0 0 100 100"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="100" height="100" fill="#392177" rx="17" ry="17" />
+										<rect class="plus-vertical" x="45" y="30" width="10" height="40" fill="#f4f4f4" />
+										<rect class="plus-horizontal" x="30" y="45" width="40" height="10" fill="#f4f4f4" />
+									</svg>
+								</button>
+							</div>
+							<div class="faq__answer">
+								<p>В закрытом чате мы делимся актуальной информацией, важными обновлениями и ответами на вопросы
+									участников</p>
+							</div>
+						</div>
+						<div class="faq__item">
+							<div class="faq__question">
+								<button class="faq__button">
+									<span> Из какой страны можно попасть в тур?
+									</span>
+									<svg class="services__item-toggle" width="100" height="100" viewBox="0 0 100 100"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="100" height="100" fill="#392177" rx="17" ry="17" />
+										<rect class="plus-vertical" x="45" y="30" width="10" height="40" fill="#f4f4f4" />
+										<rect class="plus-horizontal" x="30" y="45" width="40" height="10" fill="#f4f4f4" />
+									</svg>
+								</button>
+							</div>
+							<div class="faq__answer">
+								<p>В турах могут участвовать жители любой страны, главное — наличие визы и соответствующих документов
+									для поездки</p>
+							</div>
+						</div>
+						<div class="faq__item">
+							<div class="faq__question">
+								<button class="faq__button">
+									<span>Есть ли ограничения для участия в туре?</span>
+									<svg class="services__item-toggle" width="100" height="100" viewBox="0 0 100 100"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="100" height="100" fill="#392177" rx="17" ry="17" />
+										<rect class="plus-vertical" x="45" y="30" width="10" height="40" fill="#f4f4f4" />
+										<rect class="plus-horizontal" x="30" y="45" width="40" height="10" fill="#f4f4f4" />
+									</svg>
+								</button>
+							</div>
+							<div class="faq__answer">
+								<p>Участие в туре не ограничено, однако могут быть возрастные или медицинские рекомендации для некоторых
+									туров</p>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews" id="reviews">
+			<div class="container">
+				<div class="reviews__inner">
+					<div class="reviews__top">
+						<h2 class="reviews__top-title title"> <span>Отзывы</span><br>участников туров</h2>
+						<p class="reviews__top-text title-text">В наших тура собираются замечательные участники,<br> многие
+							становятся
+							друзьями после путешествия</p>
+					</div>
+					<div class="swiper mySwiper reviews__slyder">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide reviews__slide">
+								<div class="reviews__slide-inner">
+									<div class="reviews__slide-content">
+										<p class="reviews__slide-title">
+											Поездка в Корею была моей мечтой несколько лет
+										</p>
+										<p class="reviews__slide-text">
+											Организаторы тура постарались показать нам Корею с разных сторон, мы прониклись жизнью здесь.
+											Нам отвечали на все вопросы и помогали со всем. Спасибо!
+										</p>
+										<p class="reviews__slide-autor">
+											Евгения
+										</p>
+										<p class="reviews__slide-tour">
+											Тур "Цветение вишни", апрель 2023
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide reviews__slide">
+								<div class="reviews__slide-inner">
+									<div class="reviews__slide-content">
+										<p class="reviews__slide-title">
+											После поездки появились новые цели и планы
+										</p>
+										<p class="reviews__slide-text">
+											Мы были на связи с Korean Tour, когда я собиралась в Корею и оформляла документы, так что с этим
+											не возникло никаких проблем. Корея - удивительная страна! Спасибо за эти эмоции.
+										</p>
+										<p class="reviews__slide-autor">
+											Марина
+										</p>
+										<p class="reviews__slide-tour">
+											Тур "K-pop", июнь 2023
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide reviews__slide">
+								<div class="reviews__slide-inner">
+									<div class="reviews__slide-content">
+										<p class="reviews__slide-title">
+											Живем один раз, надо исполнять свои мечты
+										</p>
+										<p class="reviews__slide-text">
+											Korean Tour молодцы, все организовали и продумали до мелочей. Мы посетили очень интересные
+											исторические места и дворцы в окрестностях Сеула. Очень хочется вернутся в Корею еще раз.
+										</p>
+										<p class="reviews__slide-autor">
+											Анастасия
+										</p>
+										<p class="reviews__slide-tour">
+											Тур "Осення Корея", октябрь 2023
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide reviews__slide">
+								<div class="reviews__slide-inner">
+									<div class="reviews__slide-content">
+										<p class="reviews__slide-title">
+											Наконец-то я здесь побывала, давно собиралась
+										</p>
+										<p class="reviews__slide-text">
+											Набрала множество прекрасной одежды и косметики, а еще собрала множество чудесных впечатлений и
+											эмоций. Оформление документов и все организационные вопросы на высшем уровне.
+										</p>
+										<p class="reviews__slide-autor">
+											Таша
+										</p>
+										<p class="reviews__slide-tour">
+											Бьюти тур, ноябрь 2024
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide reviews__slide">
+								<div class="reviews__slide-inner">
+									<div class="reviews__slide-content">
+										<p class="reviews__slide-title">
+											Недавно вернулась домой, а уже планирую новую поездку!
+										</p>
+										<p class="reviews__slide-text">
+											Я ничего не знала о Южной Корее до этой поездки. А теперь не могу остановиться, поглощаю все
+											книги и фильмы, какие только могу найти об этой необычной стране. Благодарю за прекрасный отдых
+										</p>
+										<p class="reviews__slide-autor">
+											Кристина
+										</p>
+										<p class="reviews__slide-tour">
+											Новогодний тур, декабрь 2024
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="contacts" id="contacts">
+			<div class="container">
+				<div class="contacts__inner">
+					<div class="contacts__image">
+						<picture>
+							<source srcset="images/contacts.avif" type="image/avif">
+							<source srcset="images/contacts.webp" type="image/webp">
+							<img src="images/contacts.jpg" alt="">
+						</picture>
+					</div>
+					<div class="contacts__info">
+						<h2 class="contacts__title title">
+							Контакты и оплата
+						</h2>
+						<div class="contacts__items">
+							<a class="contacts__item" href="#">
+								<dt>@korean_tour</dt>
+								<dd>наш нельзяграм</dd>
+							</a>
+							<a class="contacts__item" href="#">
+								<dt>@korean_tour</dt>
+								<dd>наш Linkedin</dd>
+							</a>
+							<a class="contacts__item" href="#">
+								<dt>@koreantour.info@gmail.com</dt>
+								<dd>наша почта</dd>
+							</a>
+						</div>
+						<div class="contacts__pay">
+							<div class="contacts__pay-icons">
+								<img src="images/visa.png" alt="Оплата туров картой Visa">
+								<img src="images/paypal.png" alt="Оплата туров с помощью PayPal">
+								<img src="images/mastercard.png" alt="Оплата туров картой MasterCard">
+								<img src="images/applepay.png" alt="Оплата туров с помощью Apple Pay">
+							</div>
+							<div class="contacts__pay-text">
+								Вы можете оплатить тур любым удобным для вас способом из любой страны
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+
+		<div class="container">
+
+			<div class="footer__inner">
+
+				<div class="footer__top">
+
+					<nav class="footer__menu">
+
+						<ul class="footer__menu-list">
+
+							<li class="footer__menu-item">
+
+								<a href="#about">
+
+									О нас
+
+								</a>
+
+							</li>
+
+							<li class="footer__menu-item">
+
+								<a href="#faq">
+
+									FAQ
+
+								</a>
+
+							</li>
+
+							<li class="footer__menu-item">
+
+								<a href="#partners">
+
+									Наши партнеры
+
+								</a>
+
+							</li>
+
+							<li class="footer__menu-item">
+
+								<a href="#services">
+
+									Услуги
+
+								</a>
+
+							</li>
+
+							<li class="footer__menu-item">
+
+								<a href="#reviews">
+
+									Отзывы
+
+								</a>
+
+							</li>
+
+							<li class="footer__menu-item">
+
+								<a href="#partners">
+
+									Система лояльности
+
+								</a>
+
+							</li>
+
+							<li class="footer__menu-item">
+
+								<a href="#tours">
+
+									Расписание туров
+
+								</a>
+
+							</li>
+
+							<li class="footer__menu-item">
+
+								<a href="#">
+
+									Вакансии
+
+								</a>
+
+							</li>
+
+							<li class="footer__menu-item">
+
+								<a href="#partners">
+
+									Подарочный сертификат
+
+								</a>
+
+							</li>
+
+						</ul>
+
+					</nav>
+
+					<div class="footer__details">
+
+						<p>ИП ХХХХХХХХХХХХ</p>
+
+						<p>ИНН ХХХХХХХХХХХХ</p>
+
+						<div class="footer__documents">
+
+							<a href="#" class="footer__document">Лицензия</a>
+
+							<a href="#" class="footer__document">Договор оферты</a>
+
+							<a href="#" class="footer__document">Политика конфиденциальности</a>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="footer__bottom">
+
+					<p>@ 2025, Korean Tours, все права защищены</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer>
+	<script src="js/main.min.js"></script>
+</body>
+
+</html>
